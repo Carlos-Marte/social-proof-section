@@ -1,0 +1,12 @@
+.Footer {
+  display: grid;
+  gap: 1em;
+
+  @media only screen and (min-width: $breakpoint-laptop) {
+    & {
+      grid-template-columns: repeat(3, max-content);
+      justify-content: space-between;
+      gap: unset;
+    }
+  }
+}

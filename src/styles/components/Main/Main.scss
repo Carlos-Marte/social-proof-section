@@ -1,0 +1,13 @@
+.Main {
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3.5em 1em;
+  display: grid;
+  gap: 3em;
+  background: red;
+
+  @media only screen and (min-width: $breakpoint-desktop){
+    padding: 0 1em;
+  }
+}

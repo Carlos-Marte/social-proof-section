@@ -1,0 +1,66 @@
+.Header {
+  text-align: center;
+  display: grid;
+  gap: 3em;
+  place-content: center;
+
+  // Texts
+  &-textsContainer {
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1em;
+    justify-items: center;
+  }
+
+  &-heading1 {
+    padding: 0 1em;
+    font-size: 2.3em;
+  }
+
+  &-paragraph {
+    padding: 0 1em;
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+
+  // RatedCards
+  &-ratedsContainer {
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1em;
+  }
+
+  @media only screen and (min-width: $breakpoint-laptop) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      gap: unset;
+      text-align: left;
+    }
+
+    &-textsContainer {
+      justify-items: start;
+      align-content: center;
+    }
+
+    &-heading1 {
+      padding: 0;
+      font-size: 4em;
+    }
+
+    &-paragraph {
+      padding: 0;
+      font-size: 1.3em;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    &-heading1 {
+      padding-right: 3em;
+    }
+
+    &-paragraph {
+      padding-right: 8em;
+    }
+  }
+  
+}
